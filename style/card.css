@@ -1,0 +1,133 @@
+.card{
+    font-family: var(--main-font);
+    background-color: var(--white);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__img{
+    width: 175px;
+    height: 175px;
+
+}
+
+.descricao__titulo{
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.descricao__titulo-livro{
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao__texto{
+    font-size: 14px;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.botoes__item{
+    margin: 0.5em;
+}
+
+.botoes__ancora{
+    color: var(--white);
+    text-decoration: none;
+    padding: 1em 2.2em;
+    background-color: var(--orange);
+    font-weight: 700;
+}
+
+.topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1em 0;
+    text-align: center;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    background-color: var(--blue);
+}
+
+.topicos__titulo{
+    color: var(--white);
+}
+
+.topicos__lista{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.topicos__link{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 0.5em;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media  screen and (min-width: 1024px) {
+    
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
+
+    .topicos__titulo{
+        font-size: 24px;
+    }
+
+    .topicos__lista{
+        gap: 40px;
+    }
+
+    .topicos__link{
+        font-size: 24px;
+    }
+
+    
+
+}
+@media screen and (min-width: 1728px) {
+        
+    .descricao{
+        margin-right: 2em;
+    }
+    
+    .descricao__titulo{
+        font-size: 32px;
+    }
+
+    .descricao__texto{
+        font-size: 16px;
+    }
+
+    .card{
+        width: 60%;
+        margin-left: 3em;
+    }
+
+    .topicos{
+        padding: 3em 25vw;
+    }
+}
